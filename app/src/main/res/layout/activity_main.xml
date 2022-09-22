@@ -11,7 +11,7 @@
         android:layout_width="412dp"
         android:layout_height="493dp"
         android:adjustViewBounds="true"
-        android:contentDescription="shows title screen"
+        android:contentDescription="@string/shows_title_screen"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -20,11 +20,11 @@
         app:srcCompat="@drawable/main_title" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/startButton"
         android:layout_width="380dp"
         android:layout_height="0dp"
         android:layout_marginTop="548dp"
-        android:text="START YOUR ADVENTURE"
+        android:text="@string/start_your_adventure"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,14 +35,18 @@
         android:layout_width="404dp"
         android:layout_height="48dp"
         android:layout_marginBottom="24dp"
+        android:background="@color/white"
         android:ems="10"
-        android:hint="Enter Your Name"
+        android:hint="@string/enter_your_name"
         android:inputType="textPersonName"
         android:maxLength="30"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/titleImageView"
+        app:layout_constraintVertical_bias="0.0"
+        android:autofillHints="enter name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
