@@ -1,8 +1,22 @@
 package com.example.interactivestory.models;
 
 public class Choice {
+    //region *** properties ***
     private int textId;
+    private int nextPage;
+    //endregion
 
+    //region *** constructor***
+    public Choice(int textId, int nextPage) {
+        this.textId = textId;
+        this.nextPage = nextPage;
+    }
+
+    public Choice() {
+    }
+    //endregion
+
+    //region *** getter & setter ***
     public int getTextId() {
         return textId;
     }
@@ -18,6 +32,6 @@ public class Choice {
     public void setNextPage(int nextPage) {
         this.nextPage = nextPage;
     }
+    //endregion
 
-    private int nextPage;
 }

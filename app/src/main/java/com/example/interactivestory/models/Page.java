@@ -1,15 +1,47 @@
 package com.example.interactivestory.models;
 
 public class Page {
-    private int imageId;
+
+    //region ***Properties***
+    private int imageId; // this will show what kind of imagethe picture will have.
     private int textId;
     private Choice choice1;
     private Choice choice2;
+    private boolean isFinalPage = false;
+    //endregion
+
+
+
+    //region ***constructors***
+    public Page() {
+    }
+
+    public Page(int imageId, int textId) {
+        this.imageId = imageId;
+        this.textId = textId;
+        this.isFinalPage = true;
+    }
+
+    public Page(int imageId, int textId, Choice choice1, Choice choice2) {
+        this.imageId = imageId;
+        this.textId = textId;
+        this.choice1 = choice1;
+        this.choice2 = choice2;
+    }
+    //endregion
+
+    public boolean isFinalPage() {
+        return isFinalPage;
+    }
+
+    public void setFinalPage(boolean finalPage) {
+        isFinalPage = finalPage;
+    }
+
 
     public Choice getChoice1() {
         return choice1;
     }
-
     public void setChoice1(Choice choice1) {
         this.choice1 = choice1;
     }
