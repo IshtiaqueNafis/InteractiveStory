@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText nameField;
     private Button startButton;
 
-
     //endregion
 
 
@@ -37,9 +36,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startStory(String name) {
-        Intent intent = new Intent(this, StoryActivity.class);
-
-        String key = getString(R.string.key_name);
+        Intent intent = new Intent(this, StoryActivity.class); // intent creates a new screen.
+        String key = getString(R.string.key_name); //get the name from xml/
         intent.putExtra(key, name);
         startActivity(intent);
     }
