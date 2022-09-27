@@ -1,6 +1,7 @@
 package com.example.interactivestory.models;
 
 public class Choice {
+
     //region *** properties ***
     private int textId;
     private int nextPage;

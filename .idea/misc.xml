@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/nafu1/AndroidStudioProjects/InteractiveStory/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/nafu1/AndroidStudioProjects/InteractiveStory/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/nafu1/AndroidStudioProjects/InteractiveStory/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/nafu1/AndroidStudioProjects/InteractiveStory/app/src/main/res/layout/activity_story.xml" value="0.29322916666666665" />
         <entry key="..\:/Users/nafu1/AndroidStudioProjects/InteractiveStory/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1655" />
       </map>

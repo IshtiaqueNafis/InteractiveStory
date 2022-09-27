@@ -30,9 +30,13 @@ public class MainActivity extends AppCompatActivity {
             String name = nameField.getText().toString();
             Toast.makeText(MainActivity.this, name, Toast.LENGTH_SHORT).show();
             startStory(name);
-
         });
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        nameField.setText("");
     }
 
     private void startStory(String name) {

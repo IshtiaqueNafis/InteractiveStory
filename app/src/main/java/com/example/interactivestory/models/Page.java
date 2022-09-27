@@ -4,7 +4,7 @@ public class Page {
 
     //region ***Properties***
     private int imageId; // this will show what kind of imagethe picture will have.
-    private int textId;
+    private int textId; // this will get the text id from the string resources
     private Choice choice1;
     private Choice choice2;
     private boolean isFinalPage = false;
@@ -28,7 +28,10 @@ public class Page {
         this.choice1 = choice1;
         this.choice2 = choice2;
     }
+
     //endregion
+
+    //region *** getter & setter ***
 
     public boolean isFinalPage() {
         return isFinalPage;
@@ -37,7 +40,6 @@ public class Page {
     public void setFinalPage(boolean finalPage) {
         isFinalPage = finalPage;
     }
-
 
     public Choice getChoice1() {
         return choice1;
@@ -69,4 +71,6 @@ public class Page {
     public void setImageId(int imageId) {
         this.imageId = imageId;
     }
+
+    //endregion
 }
